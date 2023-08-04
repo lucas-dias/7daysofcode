@@ -24,7 +24,7 @@ const Cta = () => {
     }
   })
 
-  const onSubmit = (data: any) => { setOutput(JSON.stringify(data.userEmail, null, 1)), alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail: ${output}`) }
+  const onSubmit = (data: any) => { let mail = JSON.stringify(data.userEmail, null, 1); alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail: ${mail}`) }
   const onError = (errors: any, e: any) => console.log(errors, e)
 
   return (
