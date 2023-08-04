@@ -38,7 +38,7 @@ const Cta = () => {
           <input {...register("userEmail")} type="email" id="userEmail" placeholder="Insira seu e-mail" />
 
           <button>Assinar Newsletter</button>
-          {errors?.userEmail?.message && <p>{errors?.userEmail?.message}</p>}
+          {errors?.userEmail?.message && <p className={estilos.error_p}>{errors?.userEmail?.message}</p>}
         </form>
       </div>
       <Image src={planta} alt="Vaso de plantas" />

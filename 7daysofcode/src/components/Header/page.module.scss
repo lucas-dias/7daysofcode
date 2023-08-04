@@ -16,4 +16,21 @@
       list-style-type: none;
     }
   }
+
+  @media (max-width: 768px) {
+    .nav-bar{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+    }
+    ul{
+      gap: 5px;
+      font-size: 0.7rem
+    }
+
+    img{
+      width: 28%;
+      margin-top: -22px;
+    }
+  }
 }

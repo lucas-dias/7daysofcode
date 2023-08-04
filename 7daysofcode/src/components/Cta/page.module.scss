@@ -48,4 +48,32 @@
     height: 60px;
     padding: 20px;
   }
+  
+
+}
+
+@media (max-width: 768px) {
+  .center{
+    flex-direction: column;
+  }
+  
+  .center > img{
+    width: 50%;
+    height: 50%
+  }
+
+  .texto_cta{
+    p{
+      font-size: 13px;
+    }
+
+    h2{
+      font-size: 3.5rem
+    }
+  }
+
+  .error_p{
+    font-size: 15px;
+    margin-top: 10px;
+  }
 }
