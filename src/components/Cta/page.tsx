@@ -5,13 +5,16 @@ import planta from "/public/images/hero_index.png"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from 'zod'
 import { useForm } from 'react-hook-form'
-import { useState } from 'react'
 
 const Cta = () => {
-  const FormSchema = z.object({ userEmail: z.string().nonempty("O e-mail é obrigatório").email({ message: 'Insira um formato de e-mail válido' }) })
+  const FormSchema = z.object({
+    userEmail: z.string()
+      .nonempty("O e-mail é obrigatório")
+      .email({
+        message: 'Insira um formato de e-mail válido'
+      })
+  })
   type FormSchemaData = z.infer<typeof FormSchema>
-
-  const [output, setOutput] = useState('')
 
   const {
     register,
@@ -24,7 +27,17 @@ const Cta = () => {
     }
   })
 
-  const onSubmit = (data: any) => { let mail = JSON.stringify(data.userEmail, null, 1); alert(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail: ${mail}`) }
+  async function onSubmit(data: any) {
+    let mail = JSON.stringify(data.userEmail, null, 1);
+    await fetch('/api/mail', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(mail)
+    });
+  }
   const onError = (errors: any, e: any) => console.log(errors, e)
 
   return (
