@@ -10,6 +10,6 @@ Este curso é uma introdução ao framework Next.JS, com panoramas sobre build, 
 | :fire: Desafio     | [7DaysofCode](https://7daysofcode.io/matricula/react)
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://github.com/lucas-dias/7daysofcode/assets/49764648/cc42ac1e-cd6e-4dbc-8314-f01bfa6ce387#vitrinedev)
+(https://github.com/lucas-dias/7daysofcode/assets/49764648/f483d254-f233-4673-8450-075f24ab1138#vitrinedev)
 
 ## Detalhes do projeto
