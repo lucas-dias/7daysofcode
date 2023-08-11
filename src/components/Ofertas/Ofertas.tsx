@@ -22,7 +22,7 @@ const Ofertas = () => {
 
   return (
     <>
-      <article id={estilos.ofertas}>
+      <article id="ofertas" className={estilos.ofertas}>
         <header>
           <p>Conheça nossas</p>
           <h2>ofertas</h2>
@@ -33,7 +33,7 @@ const Ofertas = () => {
               <img src={plantas.img} alt="" />
               <div className={estilos.detalhes}>
                 <h3>{plantas.name}</h3>
-                <p>{`R$: ${plantas.preco}`}</p>
+                <p>{`R$:${plantas.preco}`}</p>
                 <Link href="#">Comprar <FaAngleRight /></Link>
               </div>
             </div>

@@ -1,0 +1,63 @@
+.planta_container{
+  margin-bottom: 150px;
+  margin-top: -65px;
+  display: flex;
+  width: 1000px;
+  height: 440px;
+
+  .minha_planta{
+    width: 100%;
+    background: url('/images/minha_planta.png') no-repeat center;
+    flex: 1;
+  }
+
+  article.como_conseguir{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0.7;
+    background-color: #fff;
+    padding: 25px;
+
+    p{
+      font-size: 1.1rem
+    }
+    h2{
+      font-family: var(--font-elsie);
+      font-size: 2.5rem;
+    }
+  }
+
+  section.lista{
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+
+    justify-content: space-evenly;
+
+    .circulo{
+      background-color: #FFCB47;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      li{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        align-items: center;
+        list-style-type: none;
+      }
+    }
+  }
+
+
+}

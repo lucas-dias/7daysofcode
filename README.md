@@ -6,7 +6,7 @@ Este curso é uma introdução ao framework Next.JS, com panoramas sobre build, 
 | -------------  | --- |
 | :sparkles: Nome        | **7DaysofCode: Casa Verde**
 | :label: Tecnologias | react.js, next.js, typescript
-| :rocket: URL         | 7daysofcode-iota.vercel.app
+| :rocket: URL         | 7daysofcode-lfdias.vercel.app
 | :fire: Desafio     | [7DaysofCode](https://7daysofcode.io/matricula/react)
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->

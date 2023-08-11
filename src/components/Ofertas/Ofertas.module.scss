@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Open+Sans:wght@300;400;700&display=swap');
-
-#ofertas{
+.ofertas{
   display: flex; 
   flex-direction: column;
   text-align: center;
@@ -69,14 +67,15 @@
     }
 
     p{
-      font-family: Montserrat;
-      color: #666;
+      font-size: 18px;
+      font-family: Cascadia Mono;
+      color: rgba(32, 32, 32, 0.7137254902);
     }
 
     a{
-      font-family: Montserrat;
+      font-family: Cascadia Mono;
       font-weight: 600;
-      color: #FFCB47
+      color: #FFAA47;
     }
     svg{
       vertical-align: middle;
