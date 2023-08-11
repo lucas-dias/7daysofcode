@@ -1,6 +1,7 @@
 import Image from "next/image"
 import estilos from "./page.module.scss"
 import logo from "/public/images/logo.png"
+import Link from "next/link"
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <Image src={logo} alt="Logo 7DoC" loading="lazy" />
       <ul>
         <li>Como fazer /</li>
-        <li>Ofertas /</li>
+        <Link href="#ofertas"><li>Ofertas /</li></Link>
         <li>Depoimentos /</li>
         <li>Vídeos /</li>
         <li>Meu Carrinho</li>

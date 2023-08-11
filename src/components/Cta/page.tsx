@@ -35,7 +35,7 @@ const Cta = () => {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(mail)
+      body: JSON.stringify(mail),
     });
   }
   const onError = (errors: any, e: any) => console.log(errors, e)
@@ -49,7 +49,6 @@ const Cta = () => {
         <p>Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
         <form className={estilos.newsletter} onSubmit={handleSubmit(onSubmit, onError)}>
           <input {...register("userEmail")} type="email" id="userEmail" placeholder="Insira seu e-mail" />
-
           <button>Assinar Newsletter</button>
           {errors?.userEmail?.message && <p className={estilos.error_p}>{errors?.userEmail?.message}</p>}
         </form>
