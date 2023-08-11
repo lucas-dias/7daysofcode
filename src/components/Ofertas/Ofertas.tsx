@@ -17,7 +17,7 @@ const Ofertas = () => {
   }
 
   useEffect(() => {
-    produtosQueryApi('http://dbvercel.vercel.app/plantas/')
+    produtosQueryApi('https://dbvercel.vercel.app/plantas/')
   }, [])
 
   return (
