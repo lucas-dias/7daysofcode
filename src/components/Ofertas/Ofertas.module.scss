@@ -70,4 +70,23 @@
       vertical-align: middle;
     }
   }
+
+  .filtros_container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    input{
+      width: 200px;
+    }
+  }
+
+  .ordenar{
+    display: flex;
+    gap: 15px;
+  }
 }
