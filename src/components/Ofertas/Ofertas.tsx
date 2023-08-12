@@ -71,7 +71,7 @@ const Ofertas = () => {
             >
               <option value="">Padrão</option>
               <option value="preco">Por Preço</option>
-              <option value="nome">Por Nome</option>
+              <option value="name">Por Nome</option>
             </select>
             <select
               name="select-order"
