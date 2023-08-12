@@ -9,7 +9,7 @@ import { useForm } from 'react-hook-form'
 const Cta = () => {
   const FormSchema = z.object({
     userEmail: z.string()
-      .nonempty("O e-mail é obrigatório")
+      .nonempty("Este campo é obrigatório")
       .email({
         message: 'Insira um formato de e-mail válido'
       })
@@ -29,14 +29,15 @@ const Cta = () => {
 
   async function onSubmit(data: any) {
     let mail = JSON.stringify(data.userEmail, null, 1);
-    await fetch('/api/mail', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(mail),
-    });
+    // await fetch('/api/mail', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept': 'application/json',
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(mail),
+    // });
+    alert('Funcionalidade desabilitada! :). O email inserido foi: ' + mail)
   }
   const onError = (errors: any, e: any) => console.log(errors, e)
 
