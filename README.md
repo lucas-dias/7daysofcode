@@ -1,6 +1,7 @@
 # 7DaysofCode: Casa Verde
 
-Este curso é uma introdução ao framework Next.JS, com panoramas sobre build, SEO, rotas, estilização, CMS e deploy do projeto na Vercel
+Projeto desenvolvido para o desafio 7DaysofCode, da Alura, utilizando as tecnologias React.js, Next.js, Typescript, zod, axios e json-server.
+O objetivo era desenvolver uma aplicação com newsletter e exibição de catálogo de plantas aos clientes.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
