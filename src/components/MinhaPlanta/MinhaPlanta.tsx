@@ -1,11 +1,12 @@
+import Image from "next/image"
 import estilos from "./MinhaPlanta.module.scss"
-
+import minhaPlanta from "/public/images/minha_planta.png"
 
 const MinhaPlanta = () => {
   return (
     <>
       <div className={estilos.planta_container}>
-        <div className={estilos.minha_planta}></div>
+        <Image src={minhaPlanta} alt="Banner chamada para compras de plantas"></Image>
         <article className={estilos.como_conseguir}>
           <header>
             <p>Como conseguir</p>
