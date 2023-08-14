@@ -6,7 +6,7 @@
   align-items: center;
   width: 100%;
 
-  ul .menu{
+  ul.menu{
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -24,12 +24,12 @@
     flex-direction: row;
     align-content: center;
   }
-  ul .menu{
+  ul.menu{
     gap: 5px;
     font-size: 0.7rem
   }
 
-  img .logo{
+  img.logo{
     width: 28%;
     margin-top: -22px;
   }
