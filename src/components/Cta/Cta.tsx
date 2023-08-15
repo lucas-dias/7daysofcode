@@ -54,7 +54,7 @@ const Cta = () => {
           {errors?.userEmail?.message && <p className={estilos.error_p}>{errors?.userEmail?.message}</p>}
         </form>
       </div>
-      <Image src={planta} alt="Vaso de plantas" />
+      <Image src={planta} alt="Vaso de plantas" loading="lazy" />
     </div>
   )
 }

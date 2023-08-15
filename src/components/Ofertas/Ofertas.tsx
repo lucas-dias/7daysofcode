@@ -5,6 +5,7 @@ import { FaAngleRight } from "react-icons/fa"
 import axios, { AxiosRequestConfig } from 'axios'
 import { useEffect, useState } from 'react'
 import IPlantas from '@/interfaces/IPlantas'
+import Image from 'next/image'
 
 interface IParametrosBusca {
   sorting?: string
@@ -89,7 +90,7 @@ const Ofertas = () => {
         <section>
           {ofertas.map(plantas => {
             return <div key={plantas.id} className={estilos.card}>
-              <img src={plantas.img} alt="" />
+              <Image src={plantas.img} alt={`Imagem da planta ${plantas.name}`} loading="lazy"></Image>
               <div className={estilos.detalhes}>
                 <h3>{plantas.name}</h3>
                 <p>{`R$:${plantas.preco}`}</p>

@@ -4,6 +4,7 @@ import Cta from '@/components/Cta/Cta'
 import Ofertas from '@/components/Ofertas/Ofertas'
 import MinhaPlanta from '@/components/MinhaPlanta/MinhaPlanta'
 import Footer from '@/components/Footer/Footer'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <MinhaPlanta />
       <Ofertas />
       <Footer />
+      <Analytics />
     </main>
   )
 }

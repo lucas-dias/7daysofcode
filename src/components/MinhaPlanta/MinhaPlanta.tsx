@@ -6,7 +6,7 @@ const MinhaPlanta = () => {
   return (
     <>
       <div className={estilos.planta_container}>
-        <Image src={minhaPlanta} alt="Banner chamada para compras de plantas"></Image>
+        <Image src={minhaPlanta} alt="Banner chamada para compras de plantas" loading="lazy" ></Image>
         <article className={estilos.como_conseguir}>
           <header>
             <p>Como conseguir</p>
